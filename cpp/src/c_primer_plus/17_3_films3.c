@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "include/17_3_list.h"
+// #include "include/17_3_list2.h"
+// #include "include/17_3_list3.h" 
 
 #define TSIZE 45
 void showmovies(Item item);
@@ -19,7 +21,7 @@ int main(int argc, char const *argv[])
     }
     printf("Enter first movie title: ");
     
-    while(scanf("%[^\n]", temp.title) != 0 && temp.title != '\0')
+    while(scanf("%[^\n]", temp.title) != 0 && temp.title[0] != '\0')
     {
         printf("Enter your rating <0-10>: ");
         scanf("%d", &temp.rating);
